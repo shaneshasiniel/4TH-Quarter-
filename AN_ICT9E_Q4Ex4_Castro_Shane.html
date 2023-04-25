@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity 4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+<style type="text/css">
+    h1{
+        font-family: Sigmar;
+        text-align: center;
+    }
+    form{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-family: Vina Sans ;
+        font-size: 25px;
+
+    }
+    body{
+        background-color: #87CA7D;
+    }
+</style>
+
+</head>
+<body>
+    <br>
+    <br>
+    <h1>Inches to Centimeters Converter</h1><br>
+
+    <form>
+    	Enter Number: <input type="text" id="num1"><br>
+    	<button type="submit" onclick="Compute()">Calculate</button>
+
+ </form><br>
+        <br>
+<h1>Inches to Centimeters Chart</h1>
+<p>1 inch = 2.54 cm</p>
+<p>2 inches = 5.08 cm</p>
+<p>3 inches = 7.62 cm</p>
+<p>4 inches = 10.16 cm</p>
+<p>5 inches = 12.7 cm</p>
+<p>6 inches = 15.24 cm</p>
+<p>7 inches = 17.78 cm</p>
+<p>8 inches = 20.32 cm</p>
+<p>9 inches = 22.86 cm</p>
+<p>10 inches = 25.4 cm</p>
+
+
+    <script type="text/javascript">
+    	function Compute(){
+    		let num1 = document.getElementById("num1").value;
+    		let product = (num1 * 2.54) ;
+    
+    		window.alert("this is the value in centimeters: " + product);
+    	}
+
+    </script>
+
+</body>
+</html>
