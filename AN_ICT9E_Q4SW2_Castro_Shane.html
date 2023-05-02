@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style type="text/css">
+
+	nav{
+		font-family: Oswald;
+
+
+	}
+
+
+.navbar{
+background-image: linear-gradient(to right,#0080B0  , #97E3FF);
+
+}
+h1, p{
+	text-align: center;
+	font-family: Source Sans Pro;
+
+}
+img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img{
+	width: 400px;
+	height: 250px;
+}
+  form{
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+	<div class="navbar">
+<nav class="navbar navbar-dark navbar-expand-sm">
+	<a href="#" class="navbar-brand">Weather</a>
+		<ul class="navbar-nav">
+</div>
+    <br>
+	<h1>Today's Date and Time</h1>
+	<p id="DT"></p>
+    
+    <br>
+    <br>
+	<h1>Farenheit to Celcius Converter</h1>
+
+	  <form>
+    	Enter Temperature: <input type="text" id="num1"><br>
+    	<button type="submit" onclick="Compute()">Calculate</button>
+
+ </form>
+	<script>
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+</script>
+  <script type="text/javascript">
+    	function Compute(){
+    		let num1 = document.getElementById("num1").value;
+    		let difference = (num1 - 32);
+    		let product = (difference * .5556)
+    
+    		window.alert("" + product);
+
+    	}
+
+    </script>
+<br>
+<img src="https://www.thoughtco.com/thmb/PapSalzN_xlNdMfE5lBRWyQmqfI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TC_609230-fahrenheit-to-celsius-formula-5abe45dca9d4f90037340dc4.gif">
+<p class="image">Source: https://www.thoughtco.com/fahrenheit-to-celsius-formula-609230</p>
+    <footer>
+      	&copy;@SCastro2023
+      </footer>
+</body>
+</html>
